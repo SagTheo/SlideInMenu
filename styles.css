@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    background-color: rgb(186, 186, 186);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: gray;
+    padding: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding: 2rem;
+    color: white;
+}
+
+.page {
+    font-size: 2rem;
+}
+
+.bi-list {
+    cursor: pointer;
+}
