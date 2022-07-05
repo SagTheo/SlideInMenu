@@ -1,3 +1,90 @@
+/* Keyframes */
+@keyframes slideIn {
+    from {
+        margin-left: -200px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: -200px;
+    }
+}
+
+@keyframes tipDown {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotate(45deg);
+        width: 28px;
+    }
+}
+
+@keyframes revTipDown {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: none;
+        width: 30px;
+    }
+}
+
+
+@keyframes tipUp {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotate(-45deg);
+        width: 28px;
+    }
+}
+
+@keyframes revTipUp {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: none;
+        width: 30px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Genera styles */
 body {
     height: 100vh;
     background-color: rgb(186, 186, 186);
@@ -23,6 +110,69 @@ main {
     font-size: 2rem;
 }
 
-.bi-list {
+/* Menu button */
+.hamburgers {
     cursor: pointer;
+    z-index: 1;
 }
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    transform-origin: 0px 1.5px;
+}
+
+/* Menu */
+.menu {
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    margin-left: -200px;
+    padding-top: 5rem;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Animations */
+.slideIn {
+    animation: 1s forwards slideIn;
+}
+
+.tipDown {
+    animation: 1s forwards tipDown;
+}
+
+.tipUp {
+    animation: 1s forwards tipUp;
+}
+
+.fadeOut {
+    animation: 1s forwards fadeOut;
+}
+
+.slideOut {
+    animation: 1s forwards slideOut;
+}
+
+.revTipDown {
+    animation: 1s forwards revTipDown;
+}
+
+.revTipUp {
+    animation: 1s forwards revTipUp;
+}
+
+.fadeIn {
+    animation: 1s forwards fadeIn;
+}
+
